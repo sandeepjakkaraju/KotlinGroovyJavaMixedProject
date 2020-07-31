@@ -12,6 +12,8 @@
         <kotlin.version>1.4.0-rc</kotlin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -120,22 +122,23 @@
 
     <build>
         <plugins>
+
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
                 <version>${kotlin.version}</version>
+                <dependencies></dependencies>
                 <executions>
                     <execution>
-                        <id>compile</id>
+                        <id>kcompile</id>
                         <phase>process-sources</phase>
                         <goals>
                             <goal>compile</goal>
                         </goals>
                         <configuration>
                             <sourceDirs>
-                                <source>src/main/kotlin</source>
-                                <source>src/main/groovy</source>
                                 <source>src/main/java</source>
+                                <source>src/main/kotlin</source>
                             </sourceDirs>
                         </configuration>
                     </execution>
@@ -148,13 +151,13 @@
                         <configuration>
                             <sourceDirs>
                                 <source>src/test/kotlin</source>
+                                <source>src/test/java</source>
                                 <source>src/test/resources</source>
                             </sourceDirs>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
-
 
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -202,6 +205,7 @@
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
 
     </build>

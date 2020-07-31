@@ -17,4 +17,9 @@
   <component name="GreclipseSettings">
     <option name="greclipsePath" value="$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-eclipse-batch/3.0.1-01/groovy-eclipse-batch-3.0.1-01.jar" />
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="foundation" options="" />
+    </option>
+  </component>
 </project>
