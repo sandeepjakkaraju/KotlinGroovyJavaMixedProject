@@ -7,7 +7,7 @@
 
 ## We can use any Groovy Class in any Java. 
 ## We can use any Kotlin Class in any Groovy Class or Java Class
-## To use Groovy class in Java is tricky - We can create a Java Wrapper and use in Kotlin.
+## To use Groovy class in Kotlin is tricky - We can create a Java Wrapper and use in Kotlin.
 
 # Order of compilation:
 
