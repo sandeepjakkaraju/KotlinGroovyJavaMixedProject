@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="foundation" target="11.0" />
+      <module name="foundation" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="GreclipseSettings">

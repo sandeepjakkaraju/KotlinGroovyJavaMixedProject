@@ -6,6 +6,7 @@ import com.zapalk.foundation.data.Person;
 
 public class TestGroovy {
     public static String getSurlper(){
+        // Using a Groovy class in the Java Class.
         return PropertySlurper.getPerson();
     }
 }

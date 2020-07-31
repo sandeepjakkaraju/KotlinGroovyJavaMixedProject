@@ -16,7 +16,16 @@ public class Professor {
         return name;
     }
 
+    @Override
+    public String toString() {
+        return "Professor{" +
+                "name='" + name + '\'' +
+                ", designation='" + designation + '\'' +
+                '}';
+    }
+
     public void setName(String name) {
         this.name = name;
     }
+
 }

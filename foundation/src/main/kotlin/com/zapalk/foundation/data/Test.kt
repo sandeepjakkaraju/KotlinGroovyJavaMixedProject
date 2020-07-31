@@ -1,4 +1,4 @@
-package com.zapalk.foundation.data.com.zapalk.foundation.data
+package com.zapalk.foundation.data
 
 import com.zapalk.foundation.data.stringSuffixer
 import com.zapalk.foundation.security.*
@@ -7,10 +7,12 @@ import java.util.*
 
 fun main(args: Array<String>) {
 
+    // Using a Java Data Class in Kotlin Class.
     val p = Professor()
     p.name = "Raj"
     p.designation = "AP"
 
+    // Using a Java Class in Kotlin Class.
     SpringApplication.main(null)
 
     println(p.toString())
@@ -24,6 +26,8 @@ fun main(args: Array<String>) {
     Arrays.sort(arra)
     arra.forEach { print(it) }
 
+
+    // Using a Groovy class through a Java Wrapper.
     println(TestGroovy.getSurlper())
 
 }
@@ -31,5 +35,5 @@ fun main(args: Array<String>) {
 fun sortArray(arr: Array<Int>) = Collections.sort(arr.toIntArray().toList());
 
 fun test() {
-
+    println("Hello Test !!")
 }
